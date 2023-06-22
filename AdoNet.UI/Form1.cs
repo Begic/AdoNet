@@ -1,4 +1,4 @@
-using AdoNet.UI.Models;
+using AdoNet.Data.Models;
 using Microsoft.Data.SqlClient;
 
 namespace AdoNet.UI;
@@ -6,10 +6,10 @@ namespace AdoNet.UI;
 public partial class Form1 : Form
 {
     public Form1()
-    {
-        InitializeComponent();
-
+    {   
         connectionString = @"Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=testdb; Integrated Security=True";
+
+        InitializeComponent();
 
         GetDataFormDb();
     }
